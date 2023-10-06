@@ -5,16 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        h1,body{
-            transition: all 0.8s;
-        }
-      
-    </style>
+    
 </head>
 
 <body>
-    <h1 id="hd">hello world</h1>
+    <h1 class="head">Heading 1</h1>
+    <button class="btn">
+        change color
+    </button>
+
+
+    <script>
+        let arr = ['pink','orange','blue','red','gray','yellow'];
+        let btn = document.querySelector('.btn');
+        let head = document.querySelector('.head');
+        let a = 0;
+        
+        btn.addEventListener('click',()=>{
+            head.style.color = arr[a];
+            a++;
+            if(a==6)
+            {
+                a=0;
+            }
+        })
+
+
+    </script>
+</body>
+
+    <!-- <h1 id="hd">hello world</h1>
 
     <button class="btn">
         click me
@@ -25,47 +45,35 @@
 
         let h = document.querySelector('#hd');
         let btn = document.querySelector('.btn');
-        let b = document.body;
+        let b = document.body; -->
 
 
 
-        // btn.addEventListener('click', () => {
-        //     if (h.innerHTML == 'hello world') {
-        //         h.innerHTML = 'hello new world';
-        //         btnn();
-        //     } else {
-        //         h.innerHTML = 'hello world';
+    <!-- // btn.addEventListener('click', () => {
+    // if (h.innerHTML == 'hello world') {
+    // h.innerHTML = 'hello new world';
+    // btnn();
+    // } else {
+    // h.innerHTML = 'hello world';
 
-        //     }
+    // }
 
-        // })
-        btn.addEventListener('click', () => {
-            h.style.color = 'red';
-            h.style.transform = 'translate(400px)'
-            b.style.backgroundColor = 'blue';
-        })
+    // })
+    btn.addEventListener('click', () => {
+    h.style.color = 'red';
+    h.style.transform = 'translate(400px)'
+    b.style.backgroundColor = 'blue';
+    }) -->
 
 
-        // for(let i=0;i<=10;i++)
-        // {
-        //     console.log(`2 x ${i+1} = ${2*(i+1)}`);
-        // }
-
-        // let i = 0;
-        // while(i<10){
-        //     console.log(`3 x ${i+1} = ${3*(i+1)}`);
-        //     i++;
-        // }
-
-        // let heading = document.getElementById('hd');
-        // console.log(heading.innerText);
-
-        // const laptop = (brand, size, processor, color, ram) =>{
-        //     console.log(`Brand of laptop is: ${brand}`);
-        //     console.log(`Size of laptop is: ${size}`);
-        //     console.log(`Processor is: ${processor}`);
-        //     console.log(`color of laptop is: ${color}`);
-        //     console.log(`RAM is :${ram}`);
+    <!-- // for(let i=0;i<=10;i++) // { // console.log(`2 x ${i+1}=${2*(i+1)}`); // } // let i=0; // while(i<10){ //
+        console.log(`3 x ${i+1}=${3*(i+1)}`); // i++; // } // let heading=document.getElementById('hd'); //
+        console.log(heading.innerText); // const laptop=(brand, size, processor, color, ram)=>{
+        // console.log(`Brand of laptop is: ${brand}`);
+        // console.log(`Size of laptop is: ${size}`);
+        // console.log(`Processor is: ${processor}`);
+        // console.log(`color of laptop is: ${color}`);
+        // console.log(`RAM is :${ram}`);
         // }
 
 
@@ -74,12 +82,4 @@
         // let arr = ['ali','rohail',3,5,3]
         // console.log(arr.length);
 
-        // for(let i=0;i<10;i++)
-        // {
-        //     console.log(``);
-        //     console.log(`*`);
-        // }
-    </script>
-</body>
-
-</html>
+        // for(let i=0;i<10;i++) // { // console.log(``); // console.log(`*`); // } </script> </body> </html> -->
